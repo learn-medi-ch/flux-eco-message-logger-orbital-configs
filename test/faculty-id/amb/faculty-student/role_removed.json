@@ -1,0 +1,38 @@
+{
+  "tasks": {
+    "unsubscribe-user-from-courses": {
+      "address": {
+        "path": "unsubscribe-user-from-courses",
+        "parameters": null,
+        "server": {
+          "url": "flux-eco-ilias-user-orbital:9501",
+          "protocol": "http"
+        }
+      },
+      "messageToDispatch": {
+        "$merge": "{$message}",
+        "courseIdType": "import-id",
+        "courseIds": [
+          "crs_amb-faculty-students"
+        ]
+      }
+    },
+    "unsubscribe-user-from-faculty-students-role": {
+      "address": {
+        "path": "unsubscribe-user-from-roles",
+        "parameters": null,
+        "server": {
+          "url": "flux-eco-ilias-user-orbital:9501",
+          "protocol": "http"
+        }
+      },
+      "messageToDispatch": {
+        "$merge": "{$message}",
+        "roleIdType": "import-id",
+        "roleIds": [
+          "role_amb-faculty-students"
+        ]
+      }
+    }
+  }
+}

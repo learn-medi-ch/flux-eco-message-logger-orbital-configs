@@ -1,0 +1,39 @@
+{
+  "tasks": {
+    "subscribe-user-to-courses": {
+      "address": {
+        "path": "subscribe-user-to-courses",
+        "parameters": null,
+        "server": {
+          "url": "flux-eco-ilias-user-orbital:9501",
+          "protocol": "http"
+        }
+      },
+      "messageToDispatch": {
+        "$merge": "{$message}",
+        "courseRoleName": "member",
+        "courseIdType": "import-id",
+        "courseIds": [
+          "crs_ot-faculty-students"
+        ]
+      }
+    },
+    "subscribe-user-to-faculty-students-role": {
+      "address": {
+        "path": "subscribe-user-to-roles",
+        "parameters": null,
+        "server": {
+          "url": "flux-eco-ilias-user-orbital:9501",
+          "protocol": "http"
+        }
+      },
+      "messageToDispatch": {
+        "$merge": "{$message}",
+        "roleIdType": "import-id",
+        "roleIds": [
+          "role_ot-faculty-students"
+        ]
+      }
+    }
+  }
+}

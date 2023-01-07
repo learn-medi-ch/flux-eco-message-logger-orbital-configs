@@ -1,0 +1,24 @@
+{
+  "tasks": {
+    "subscribe-user-to-faculty-admins-role": {
+      "address": {
+        "path": "subscribe-user-to-roles",
+        "parameters": null,
+        "server": {
+          "url": "flux-eco-ilias-user-orbital:9501",
+          "protocol": "http"
+        }
+      },
+      "messageToDispatch": {
+        "$merge": "{$message}",
+        "roleIdType": "import-id",
+        "roleIds": [
+          "role_dh-faculty-admins",
+          "role_medi-staff",
+          "role_medi-sandbox",
+          "role_faculty-admins"
+        ]
+      }
+    }
+  }
+}
