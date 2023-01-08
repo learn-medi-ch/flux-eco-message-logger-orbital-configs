@@ -14,7 +14,7 @@
         "$merge": "{$message}",
         "roleIdType": "import-id",
         "roleIds": [
-          "role_mtr-faculty-experts",
+          "role_ot-faculty-experts",
           "role_medi-staff",
           "role_medi-sandbox"
         ]
