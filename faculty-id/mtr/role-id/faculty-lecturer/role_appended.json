@@ -15,7 +15,7 @@
         "courseRoleName": "member",
         "courseIdType": "import-id",
         "courseIds": [
-          "crs_ot-faculty-lecturers"
+          "crs_mtr-faculty-lecturers"
         ]
       }
     },
@@ -33,7 +33,7 @@
         "$merge": "{$message}",
         "roleIdType": "import-id",
         "roleIds": [
-          "role_ot-faculty-lecturers",
+          "role_mtr-faculty-lecturers",
           "role_medi-sandbox"
         ]
       }
