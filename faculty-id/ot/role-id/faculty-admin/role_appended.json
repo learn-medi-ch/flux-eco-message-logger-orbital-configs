@@ -1,15 +1,16 @@
 {
-  "tasks": {
+  "nextMessages": {
     "subscribe-user-to-faculty-admins-role": {
       "address": {
         "path": "subscribe-user-to-roles",
         "parameters": null,
         "server": {
-          "url": "flux-eco-ilias-user-orbital:9501",
+          "host": "flux-eco-ilias-user-orbital",
+          "port": "9501",
           "protocol": "http"
         }
       },
-      "messageToDispatch": {
+      "messagePayload": {
         "$merge": "{$message}",
         "roleIdType": "import-id",
         "roleIds": [

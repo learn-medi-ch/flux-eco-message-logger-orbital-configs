@@ -1,15 +1,16 @@
 {
-  "tasks": [
+  "nextMessages": [
     {
       "address": {
         "path": "create-or-update-user",
         "parameters": [],
         "server": {
-          "url": "flux-eco-ilias-user-orbital:9501",
+          "host": "flux-eco-ilias-user-orbital",
+          "port": "9501",
           "protocol": "http"
         }
       },
-      "messageToDispatch": {
+      "messagePayload": {
         "$location": "{$message}"
       }
     }
