@@ -15,7 +15,7 @@
         "courseRoleName": "member",
         "courseIdType": "import-id",
         "courseIds": [
-          "crs_mtr-faculty-vocational-trainers"
+          "crs_ot-faculty-vocational-trainers"
         ]
       }
     },
@@ -33,7 +33,7 @@
         "$merge": "{$message}",
         "roleIdType": "import-id",
         "roleIds": [
-          "role_mtr-faculty-vocational-trainers"
+          "role_ot-faculty-vocational-trainers"
         ]
       }
     }
