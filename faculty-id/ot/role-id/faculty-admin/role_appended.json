@@ -5,7 +5,7 @@
         "path": "subscribe-user-to-roles",
         "parameters": null,
         "server": {
-          "host": "flux-eco-ilias-user-orbital",
+          "host": "10.100.10.252",
           "port": "9501",
           "protocol": "http"
         }
