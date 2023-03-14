@@ -34,6 +34,7 @@
         "roleIdType": "import-id",
         "roleIds": [
           "role_dh-faculty-lecturers",
+          "role-faculty-lecturers",
           "role_medi-sandbox"
         ]
       }
